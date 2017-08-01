@@ -21,7 +21,7 @@ export class TabsPage {
 
   openBarCodeScanner() {
     this.barcodeScanner.scan().then((barcodeData) => {
-      console.log("scanned");
+      alert(JSON.stringify(barcodeData));
       // Success! Barcode data is here
     }, (err) => {
       // An error occurred
